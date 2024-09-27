@@ -16,6 +16,12 @@
         <mxCell id="update_summary_trigger" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Trigger: update_summary&lt;/div&gt;&lt;div&gt;Calls update_summary_table after insert on details_table&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="20" y="450" width="300" height="90" as="geometry" />
         </mxCell>
+        <mxCell id="transformation" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Transformation&lt;/div&gt;&lt;div&gt;Combines staff performance and customer satisfaction metrics&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="300" y="215" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow1" value="" style="endArrow=block;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="details_table" target="transformation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="arrow2" value="" style="endArrow=block;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="update_summary_function" target="summary_table">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -23,6 +29,9 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="arrow4" value="" style="endArrow=block;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="update_summary_trigger" target="update_summary_function">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow5" value="" style="endArrow=block;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;" edge="1" parent="1" source="transformation" target="summary_table">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
